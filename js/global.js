@@ -1,6 +1,6 @@
 $(document).scroll(function () {
     const header = $('.header');
-    const logo = $('.logo');
+    const logo = header.find('.logo');
 
     if ($(this).scrollTop() > header.height()) {
         header.addClass('active');
