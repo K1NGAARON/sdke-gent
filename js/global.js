@@ -1,10 +1,13 @@
 $(document).scroll(function () {
     const header = $('.header');
+    const logo = $('.logo');
 
     if ($(this).scrollTop() > header.height()) {
         header.addClass('active');
+        logo.attr('src', '/assets/logo/logo-color.png');
     } else {
         header.removeClass('active');
+        logo.attr('src', '/assets/logo/logo.png');
     }
 });
 
